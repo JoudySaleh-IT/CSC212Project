@@ -9,7 +9,7 @@ package com.mycompany.datasproject;
  * @author joudalzahrani
  */
 public class LinkedList<T> {
-        class Node<T> {
+  class Node<T> {
 	public T data;
 	public Node<T> next;
 	public Node (T val) {
@@ -20,8 +20,11 @@ public class LinkedList<T> {
 
         private Node<T> head;
         private Node<T> current;
+        int size; 
+        
         public LinkedList () {
                 head = current = null;
+                size = 0;
         }
         public boolean empty () {
                 return head == null;
@@ -55,6 +58,7 @@ public class LinkedList<T> {
                         current = current.next;
                         current.next = tmp;
                 }
+                size ++;
         }
         public void remove () {
                 if (current == head) {
@@ -70,6 +74,14 @@ public class LinkedList<T> {
                         current = head;
                 else
                         current = current.next;
+                size--;
         }
+        
+        public int getSize()
+        {
+            return size;
+        }
+        
+        
         
 }
