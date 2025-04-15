@@ -6,7 +6,7 @@ package com.mycompany.datasproject;
 
 /**
  *
- * @author talas
+ * @author talashail
  */
 public class InvertedIndexAlbum {
     private String albumTitle;
