@@ -8,14 +8,14 @@ package com.mycompany.datasproject;
  *
  * @author talashail
  */
-public class InvertedIndexAlbum {
+public class InvAlbum {
     private String albumTitle;
     private String filterCondition;
     private InvIndexPhotoManager indexManager;
     private int comparisonCount;
 
     // Constructor
-    public InvertedIndexAlbum(String title, String condition, InvIndexPhotoManager manager) {
+    public InvAlbum(String title, String condition, InvIndexPhotoManager manager) {
         this.albumTitle = title;
         this.filterCondition = condition;
         this.indexManager = manager;
