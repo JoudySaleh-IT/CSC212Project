@@ -29,9 +29,9 @@ public class Test {
         Photo photo3 = new Photo("orange-butterfly.jpg", toTagsLinkedList("insect, butterfly, flower, color"));
         manager.addPhoto(photo3);
 
-        InvertedIndexAlbum album1 = new InvertedIndexAlbum("Album1", "bear", manager);
-        InvertedIndexAlbum album2 = new InvertedIndexAlbum("Album2", "animal AND grass", manager);
-        InvertedIndexAlbum album3 = new InvertedIndexAlbum("Album3", "", manager);
+        InvAlbum album1 = new InvAlbum("Album1", "bear", manager);
+        InvAlbum album2 = new InvAlbum("Album2", "animal AND grass", manager);
+        InvAlbum album3 = new InvAlbum("Album3", "", manager);
 
         printAlbumDetails(album1);
         printAlbumDetails(album2);
@@ -50,7 +50,7 @@ public class Test {
         return result;
     }
 
-    private static void printAlbumDetails(InvertedIndexAlbum album) {
+    private static void printAlbumDetails(InvAlbum album) {
         System.out.println("Album Name: " + album.getTitle());
         System.out.println("Condition: " + album.getCondition());
         LinkedList<Photo> photos = album.getMatchingPhotos();
