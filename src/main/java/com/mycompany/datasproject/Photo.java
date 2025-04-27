@@ -7,7 +7,7 @@ package com.mycompany.datasproject;
 
 public class Photo {
     
-          private String path;
+          String path;
           LinkedList<String> allTags = new LinkedList<>();
          
         // Constructor
